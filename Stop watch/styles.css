@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #082032;
+    color: whitesmoke;
+}
+
+h1 {
+    margin: 10px 0 0 20px;
+    user-select: none;
+}
+
+footer {
+    text-align: center;
+    user-select: none;
+    margin-top: 20px;
+}
+
+.container {
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 
+        0 0 0 1px #FFD700, 
+        0 0 0 1px #FFA500, 
+        0 0 0 1px #FFD700;
+}
+
+.container:hover {
+    box-shadow: none;
+}
+
+
+.time {
+    font-size: 6rem; /* Increase the font size */
+    margin-bottom: 20px;
+    user-select: none;
+    box-shadow: 0 0 10px rgba(255, 76, 41, 0.5);
+    border-radius: 50%;
+    padding: 30px; /* Increase the padding for a larger box */
+    background-color: #334756;
+}
+
+.controls button {
+    background-color: #FF4C29;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #E53E3E;
+    color: whitesmoke;
+}
+
+.controls button:active {
+    background-color: #CA3939;
+    transform: scale(0.95); /* Scale down the button when pressed */
+    transition: transform 0.1s;
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .time {
+        font-size: 3rem;
+    }
+    .controls button {
+        padding: 8px 15px;
+        margin: 5px 2px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Style for the lap separator */
+.lap-separator {
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 5px 0;
+}
